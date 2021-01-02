@@ -1,0 +1,29 @@
+/*In C Language*/
+#include<stdio.h>
+int main()
+{
+    char asciichar;
+    do
+    {
+        printf("\nEnter a character:");
+        scanf("%c",&asciichar);
+        printf("it's ascii value is:%d",asciichar);
+    }
+    while(asciichar!='char');
+}
+
+/*In C++*/
+#include<iostream>
+using namespace std;
+int main()
+{
+    char asciichar;
+    do
+    {
+        cout<<"\nEnter a character:";
+        cin>>asciichar;
+        cout<<"it's ascii value is:"<<(int)asciichar<<endl;
+    }
+    while(asciichar!='char');
+}
+
