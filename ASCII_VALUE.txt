@@ -1,29 +1,16 @@
-/*In C Language*/
-#include<stdio.h>
-int main()
-{
-    char asciichar;
-    do
-    {
-        printf("\nEnter a character:");
-        scanf("%c",&asciichar);
-        printf("it's ascii value is:%d",asciichar);
-    }
-    while(asciichar!='char');
-}
-
-/*In C++*/
-#include<iostream>
+#include <bits/stdc++.h>
+#include <conio.h>
 using namespace std;
+#define BACK_BTN 8
 int main()
 {
-    char asciichar;
+    char c, ch;
     do
     {
-        cout<<"\nEnter a character:";
-        cin>>asciichar;
-        cout<<"it's ascii value is:"<<(int)asciichar<<endl;
-    }
-    while(asciichar!='char');
+        cout << "Enter a character: ";
+        cin >> c;
+        cout << "Ascii value of " << c << " is: " << (int)c;
+        ch = getch();
+        cout << "\n" << endl;
+    } while (ch != BACK_BTN);
 }
-
